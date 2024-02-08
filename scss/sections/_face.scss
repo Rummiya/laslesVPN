@@ -1,0 +1,134 @@
+.face {
+    padding: 80px 0;
+    
+    &_row {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    &_left {
+        max-width: 50%;
+
+        h1 {
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 70px;
+            color: #0B132A;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #4F5665;
+            line-height: 30px;
+            margin-bottom: 50px;
+        }
+
+        button {
+            padding: 17px 77px;
+        } 
+
+    }
+
+    &_right {
+        max-width: calc(50% - 40px);
+
+        img {
+            max-width: 610px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .face {
+        padding: 40px 0;
+        
+        &_row {
+            column-gap: 40px;
+        }
+    
+        &_left {
+    
+            h1 {
+                font-size: 40px;
+                line-height: 60px;
+            }
+        
+            button {
+                font-size: 15px;
+                padding: 14px 60px;
+            } 
+    
+        }    
+    }
+}
+
+@media screen and (max-width: 992px){
+    .face {
+        padding: 40px 0;
+        
+        &_row {
+            column-gap: 40px;
+        }
+    
+        &_left {
+    
+            h1 {
+                font-size: 35px;
+                line-height: 60px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+        
+            button {
+                font-size: 15px;
+                padding: 14px 60px;
+            } 
+    
+        }    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .face_row {
+        flex-direction: column;
+        row-gap: 50px;
+
+        .face_left {
+            max-width: 100%;
+            text-align: center;
+
+            h1 {
+                font-size: 30px;
+                line-height: 50px;
+                max-width: 380px;
+
+                br {
+                    display: none;
+                }
+            }
+        
+            p {
+                font-size: 14px;
+                max-width: 380px;
+            }
+        
+            button {
+                font-size: 14px;
+                padding: 10px 40px;
+            }
+        }
+
+        .face_right {
+            text-align: center;
+            max-width: 100%;
+        }
+    }
+
+    
+}

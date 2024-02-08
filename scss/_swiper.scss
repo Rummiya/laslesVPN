@@ -1,0 +1,99 @@
+.swiper-slide {
+    
+}
+
+.swiper-slide.swiper-slide-active > .reviews-item{
+    border: 2px solid var(--def-color);
+}
+
+
+.swiper-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    .swiper-pagination {
+        position: static;
+        width: 165px;
+        height: 15px;
+    }
+    
+    .swiper-pagination-bullet {
+        transition: .2s ease;
+        height: 15px;
+        width: 15px;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: var(--def-color);
+        border-radius: 8px;
+        width: 40px;
+    }
+
+    .swiper-arrows {
+        // margin-right: 160px;
+
+        .swiper-button-prev, .swiper-button-next {
+            display: inline-block;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 45px;
+            height: 45px;
+            border: 2px solid var(--def-color);
+            border-radius: 100%;
+            position: static;
+            margin: 0;
+            cursor: pointer;
+        
+            &::after {
+                content: '';
+                font-family: none;
+            }
+        }
+    
+        .swiper-button-prev {
+            background-image: url(../images/reviews/arrow-left.svg);
+            transition: all .2s ease-in;
+            margin-right: 20px;
+
+            &.active {
+                background-image: url(../images/reviews/arrow-right.svg);
+                background-color: var(--def-color);
+                transform: rotate(180deg);
+            }
+        }
+
+        .swiper-button-next {
+            background-image: url(../images/reviews/arrow-left.svg);
+            transition: all .2s ease-in;
+            transform: rotate(180deg);
+
+            &.active {
+                background-image: url(../images/reviews/arrow-right.svg);
+                background-color: var(--def-color);
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .swiper-controls {
+        
+        .swiper-arrows {
+
+            .swiper-button-prev, .swiper-button-next {
+                width: 40px;
+                height: 40px;
+                background-size: 25px;
+            }
+
+            .swiper-button-prev {
+                margin-right: 10px;
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,138 @@
+.reviews {
+    padding-top: 80px;
+    padding-bottom: 204px;
+
+    &-text-content {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-row {
+        margin-top: 60px;
+    }
+
+    &-item {
+        max-width: 400px;
+        width: 100%;  
+        border: 2px solid #DDD;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 0 auto;
+        transition: .5s ease-in;
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .user {
+                display: flex;
+                align-items: center;
+                column-gap: 21px;
+
+                &-info {
+                    p {
+                        color: #0B132A;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 25px; /* 166.667% */
+                    }
+    
+                    span {
+                        color: #4F5665;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 25px; /* 214.286% */
+                    }
+                }
+            }
+
+            .grade {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                span {
+                    color: var(--secondary-color);
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .comment {
+            height: 100px;
+
+            p {
+                color: var(--secondary-color);
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .reviews {
+        padding-top: 40px;
+        padding-bottom: 150px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reviews {
+
+        &-item {
+
+            &-header {
+                margin-bottom: 10px;
+    
+                .user-info {
+                   
+                    p {
+                        font-size: 16px;
+                    }
+        
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .comment {
+
+                p {
+                    font-size: 14px;
+                }
+            } 
+        }
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .reviews {
+
+        &-item {
+
+            &-header {
+                margin-bottom: 10px;
+    
+                .user {
+                    column-gap: 10px;
+                }
+            }
+
+            .comment {
+
+                p {
+                    font-size: 13px;
+                }
+            } 
+        }
+
+    }
+}

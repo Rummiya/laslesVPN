@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    cursor: default;
+}
+
+.def-title {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    color: var(--secondary-color);
+}
+
+.def-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--primary-color);
+}
+
+:root {
+    --def-color: #F53855;
+    --primary-color: #4F5665;
+    --secondary-color: #0B132A;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+} 
+
+.def-btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    border-radius: 10px;
+    border: none;
+    background: var(--def-color);
+    box-shadow: 0 15px 27px rgba(245, 56, 56, 0.35);
+    transition: .2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        filter: opacity(.8);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .def-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .def-desc {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .def-title {
+        font-size: 26px;
+    }
+    
+    .def-desc {
+        font-size: 14px;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .def-title {
+        font-size: 22px;
+    }
+
+    .def-desc {
+        font-size: 12px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
